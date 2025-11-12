@@ -10,7 +10,7 @@ router.get("/products/:id", (req, res) => {
   res.send(`Product details for ID: ${req.params.id}`);
 });
 
-router.post('/products', (req, res) => {
+router.post('/products/create', (req, res) => {
     res.send('Create a new product');
 });
 

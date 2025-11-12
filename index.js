@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import router from './src/routes/products.routes.js';
+import productsRouter from './src/routes/products.routes.js';
+import authRouter from './src/routes/auth.routes.js';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -26,7 +27,11 @@ app.get('/', (req, res) => {
 });
 
 // 3. RUTAS DE LA APLICACIÓN
-app.use("/api", router);
+// Montar las rutas de autenticación
+app.use("/auth", authRouter);
+
+// Montar las rutas de productos
+// app.use("/api", productsRouter);
 
 // 4. MIDDLEWARE PARA MANEJO DE ERRORES
 
