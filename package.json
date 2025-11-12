@@ -1,0 +1,42 @@
+{
+  "name": "proyecto-final",
+  "version": "0.0.1",
+  "description": "Codo a Codo 4.0 2025 2C - Prof. Gustavo Ovejero - Facilit. Triana Menendez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianojhb/cac402025nodejs-proyectofinal.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "layered",
+    "architecture",
+    "jwt",
+    "json",
+    "firebase",
+    "firestore",
+    "cors",
+    "endpoints",
+    "middleware",
+    "body-parser",
+    "jsonwebtoken",
+    "dotenv",
+    "npm",
+    "javascript",
+    "js",
+    "talentotech",
+    "buenos aires",
+    "codo a codo",
+    "2025"
+  ],
+  "author": "Mariano Belgrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianojhb/cac402025nodejs-proyectofinal/issues"
+  },
+  "homepage": "https://github.com/marianojhb/cac402025nodejs-proyectofinal#readme"
+}
