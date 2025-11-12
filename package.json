@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Codo a Codo 4.0 2025 2C - Prof. Gustavo Ovejero - Facilit. Triana Menendez",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,5 +40,13 @@
   "bugs": {
     "url": "https://github.com/marianojhb/cac402025nodejs-proyectofinal/issues"
   },
-  "homepage": "https://github.com/marianojhb/cac402025nodejs-proyectofinal#readme"
+  "homepage": "https://github.com/marianojhb/cac402025nodejs-proyectofinal#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^12.5.0",
+    "jsonwebtoken": "^9.0.2"
+  }
 }
