@@ -2,11 +2,13 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import router from './src/routes/products.routes.js';
 
 // Load environment variables from .env file
 dotenv.config();
 
 const app = express();
+
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
@@ -22,6 +24,9 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
+
+// 3. RUTAS DE LA APLICACIÓN
+app.use("/api", router);
 
 // 4. MIDDLEWARE PARA MANEJO DE ERRORES
 
