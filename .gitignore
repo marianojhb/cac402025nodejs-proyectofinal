@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+coverage/
+.cache/
+.next/
+out/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm
+package-lock.json
+# (if you use npm ci for reproducibility, you may want to commit it instead)
+
+# Optional: test outputs
+jest-html-reporters-*
+coverage-final.json
+test-results.xml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# TypeScript
+*.tsbuildinfo
