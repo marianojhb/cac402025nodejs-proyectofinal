@@ -4,9 +4,7 @@ import productsController from '../controllers/products.controller.js';
 const router = Router();
 
 // Especificas
-router.post('/products/create', (req, res) => {
-    res.send('Create a new product');
-});
+router.post('/products/create', productsController.createProduct);
 
 // Dinamicas
 router.get("/products/:id", productsController.getProductById);
