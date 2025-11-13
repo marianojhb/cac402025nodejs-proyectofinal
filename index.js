@@ -2,8 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import productsRouter from './src/routes/products.route.js';
-import authRouter from './src/routes/auth.routes.js';
+import productsRoutes from './src/routes/products.route.js';
+import authRoutes from './src/routes/auth.routes.js';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -12,6 +12,8 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+
+// Middleware
 const corsOptions = {
   origin: ["http://localhost:5173",],
   methods: ["GET", "POST", "PUT", "DELETE"],
@@ -28,10 +30,10 @@ app.get('/', (req, res) => {
 
 // 3. RUTAS DE LA APLICACIÓN
 // Montar las rutas de autenticación
-app.use("/auth", authRouter);
+app.use("/auth", authRoutes);
 
 // Montar las rutas de productos
-app.use("/api", productsRouter);
+app.use("/api", productsRoutes);
 
 // 4. MIDDLEWARE PARA MANEJO DE ERRORES
 
