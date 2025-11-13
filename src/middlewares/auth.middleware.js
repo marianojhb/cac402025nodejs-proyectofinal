@@ -9,7 +9,7 @@ export const authMiddleware = (req, res, next) => {
 
   const token = authHeader.split(" ")[1]; // "Bearer token"
 
-  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+  jwt.verify(token, process.env.JWT_SECRET_KEY, (err, decoded) => {
     if (err) return res.status(403).json({ error: "Invalid token" });
 
     req.user = decoded; // guardamos la info del token

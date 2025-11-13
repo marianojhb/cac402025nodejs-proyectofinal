@@ -88,3 +88,20 @@ Finalmente, la aplicación debe contemplar el manejo de errores de forma clara, 
 - Crea un middleware de autenticación y protege las rutas correspondientes
 
 - Agrega la lógica necesaria en la en controlador de login para validar la identidad del usuario y devolver un Bearer Token.
+
+### Extra: Funcionalidades agregadas voluntariamente
+
+#### ✔️ Implementación de auth/register para nuevos usuarios
+
+Crear:
+
+- POST /auth/register
+
+- Guardar al usuario en Firestore
+
+- Encriptar password (con bcrypt)
+
+- Evitar registros duplicados
+
+- Devolver un token JWT al registrar (opcional pero recomendado)
+

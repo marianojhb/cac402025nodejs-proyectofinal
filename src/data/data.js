@@ -2,7 +2,6 @@
 import dotenv from 'dotenv';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
-import { initializeFirestore } from "firebase/firestore";
 
 dotenv.config();
 
