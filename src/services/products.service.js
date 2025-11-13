@@ -6,10 +6,13 @@ const getProductById = (id) => productsModel.getProductById(id);
 
 const createProduct = (producto)=> productsModel.createProduct(producto);
 
+const deleteProduct = (id) => productsModel.deleteProduct(id);
+
 const productsService = {
   getAllProducts,
   getProductById,
-  createProduct
+  createProduct,
+  deleteProduct,
 };
 
 export default productsService
